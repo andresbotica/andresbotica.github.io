@@ -2,21 +2,6 @@
 <html lang="en">
 <head>
 
-  <script>
-    const fpPromise = import('https://fpcdn.io/v3/OqgkIBQ1U1QfBjH8fgm3')
-      .then(FingerprintJS => FingerprintJS.load({
-        region: 'eu'
-      }))
-
-    fpPromise
-      .then(fp => fp.get())
-      .then(result => {
-        // This is the visitor identifier:
-        const visitorId = result.visitorId
-        console.log(visitorId)
-      })
-  </script>
-  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2W4486HNF9"></script>
   <script>
@@ -120,7 +105,9 @@
             <li><b>Edad:</b> 23</li>
             <li><b>Género:</b> Masculino</li>
           </ul>
-          <button class="btn btn-theme-outline">Descargar Currículum Vitae</button>
+          <a href="../assets/vendor/curriculum.pdf" download="curriculum.pdf">
+          <button type="button" class="btn btn-theme-outline">Descargar CV</button>
+          </a>
         </div>
       </div>
     </div>
@@ -129,7 +116,7 @@
       <div class="row py-3">
         <div class="col-md-6">
           <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Coding skills</h4>
+            <h4 class="wow fadeInUp">Programación</h4>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">Python</span>
               <div class="progress">
@@ -144,6 +131,12 @@
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">PowerShell/Shell</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">C#Sharp</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
               </div>
@@ -164,7 +157,7 @@
         </div>
         <div class="col-md-6">
           <div class="px-lg-3">
-            <h4 class="wow fadeInUp">CiberSecurity Skills</h4>
+            <h4 class="wow fadeInUp">Ciberseguridad</h4>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">Phishing</span>
               <div class="progress">
@@ -197,9 +190,8 @@
             </div>
           </div>
         </div>
-        <p>En este punto intento resumir de forma gráfica los conocimientos en los que creo que tengo más nivel. Mi historia en ciberseguridad empezó como la de muchos en este campo, con seguridad wireless.</p>
-        <p>Desde este punto de partida, empecé a formarme con cursos que expondré ahora después más detalladamente en los demás campos de la ciberseguridad.</p>
-        <p>Respecto a las "skills" sobre programación, intento enfocar el aprendizaje de estos lenguajes a cosas relacionadas con la ciberseguridad, y no tanto en temas como puede ser diseño Web o FrontEnd</p>
+        <p>En este punto intento resumir de forma gráfica algunos de los conocimientos que he estudiado en estos años. También incluiré los cursos con los que empecé a formarme en los distintos campos de la ciberseguridad.</p>
+        <p>Respecto a la programación, intento enfocar el aprendizaje de los lenguajes a cosas relacionadas con la ciberseguridad, y no tanto en temas como puede ser diseño Web o FrontEnd</p>
         <p>A parte de la ciberseguridad, me he formado también en otro tema que me encanta y me parece muy interesante, el scrapping web. Tengo conocimientos sobre Selenium y BeautifulSoup, sabiendo aplicar estas "librerías" a distintos lenguajes, como Golang o Java, pero principalmente en Python</p>
       </div>
     </div>
@@ -240,7 +232,7 @@
             <li>
               <div class="title">2020</div>
               <div class="details">
-                <h5>Nivel Medio en inglés</h5>
+                <h5>Nivel Medio-Alto en inglés</h5>
                 <small class="fg-theme"></small>
                 <p>Nivel de inglés fluído</p>
               </div>
@@ -606,6 +598,7 @@
             <p>Contáctame</p>
             <hr class="divider">
             <ul class="list-unstyled">
+              <li>aboticamanzano@gmail.com</li>
               <li>andres.botica@protonmail.com</li>
               <li>+34 603803224</li>
             </ul>
