@@ -50,7 +50,7 @@ $(document).ready(function() {
       // }
     });
   });
-  
+
   $.fn.toggleSelected = function(options) {
     var defaults = $.extend({
       classes: 'selected',
